@@ -1,5 +1,14 @@
 def nil_array(number)
   # return an array containing `nil` the given number of times
+
+  array = [];  
+
+  number.times do 
+    array << nil
+  end
+
+  return array
+
 end
 
 def first_element(array)
