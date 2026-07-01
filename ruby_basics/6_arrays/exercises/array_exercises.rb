@@ -25,7 +25,7 @@ def last_three_elements(array)
   # return the last 3 elements of the array
 
   if array.length < 3
-    array[-2..-1]
+    array
   else  
     array[-3..-1]    
   end
