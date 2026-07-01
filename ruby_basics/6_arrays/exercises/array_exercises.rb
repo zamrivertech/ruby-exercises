@@ -33,7 +33,10 @@ end
 
 def add_element(array)
   # add an element (of any value) to the array
+  array.push("1")
 end
+
+add_element([1,2,3,4])
 
 def remove_last_element(array)
   # Step 1: remove the last element from the array
