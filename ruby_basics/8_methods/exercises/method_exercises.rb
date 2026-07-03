@@ -34,13 +34,19 @@ end
 def alphabetical_list(array)
 
   array.sort.uniq
-  
+
 end
 
 
 # method name: #lucky_number
 # parameter: number (an integer) with default value of 7
 # return value: a string "Today's lucky number is <number>"
+
+def lucky_number(n = 7)
+
+  "Today's lucky number is #{n}"
+
+end
 
 
 # method name: #ascii_code
