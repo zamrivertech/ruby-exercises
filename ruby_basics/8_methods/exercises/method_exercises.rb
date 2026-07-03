@@ -7,6 +7,12 @@
 # return value: the number's ASCII character (https://www.ascii-code.com/)
 # hint: use Integer#chr
 
+def ascii_translator(n)
+
+  n.chr()
+
+end
+
 
 # method name: #common_sports
 # parameters: current_sports and favorite_sports (both arrays)
