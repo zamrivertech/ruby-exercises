@@ -55,6 +55,16 @@ end
 # explicit return value: 'Input Error' if character's length does not equal 1
 # hint: use String#ord
 
+def ascii_code(string)
+  
+ unless string.length == 1
+    return "Input Error" 
+ end 
+
+ string.ord
+
+end
+
 
 # method name: #pet_pun
 # parameter: animal (a string)
