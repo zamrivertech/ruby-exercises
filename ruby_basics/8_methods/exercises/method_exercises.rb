@@ -93,3 +93,13 @@ end
 # return value: true if the year is between 2001 - 2100, otherwise return false
 # hint: use Comparable#between?
 
+def twenty_first_century?(year) 
+  
+  if year.between?(2001,2100)
+    return true
+  end
+
+  return false
+
+end
+
