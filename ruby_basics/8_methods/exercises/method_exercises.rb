@@ -74,6 +74,19 @@ end
 # console output: otherwise, "I think <animal>s have pet-tential!" (potential)
 # hint: use puts
 
+def pet_pun(animal)
+  
+  case animal
+    when "cat"
+      puts "Cats are purr-fect!"
+    when "dog"
+      puts "Dogs are paw-some!"
+    else
+      puts "I think #{animal}s have pet-tential!"  
+  end
+  
+end
+
 
 # method name: #twenty_first_century?
 # parameter: year (an integer)
