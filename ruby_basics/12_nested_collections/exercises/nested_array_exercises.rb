@@ -72,11 +72,11 @@ def find_favorite(array_of_hash_objects)
   #   { name: 'JavaScript', is_my_favorite?: false },
   #   { name: 'HTML', is_my_favorite?: false }
   # ]
-  favorite = {}
+  favorite = nil
   
   array_of_hash_objects.each do |languages|
     
-  favorite = languages if languages[:is_my_favorite?] == true
+  favorite = languages if languages[:is_my_favorite?] == true 
 
   end
 
@@ -86,7 +86,7 @@ def find_favorite(array_of_hash_objects)
   # return true to the :is_my_favorite? key
 end
 
-find_favorite(        [
+p find_favorite(        [
           { name: 'JavaScript', is_my_favorite?: false },
           { name: 'Ruby', is_my_favorite?: true },
           { name: 'HTML', is_my_favorite?: false }
