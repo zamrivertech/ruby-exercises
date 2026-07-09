@@ -67,10 +67,15 @@ def find_language_facts(languages, language_name, fact_index = 0)
   #                 is_beautiful?: false }
   # }
   
-   languages[language_name][:facts][fact_index] ? languages[language_name][:facts][fact_index] : nil
+   unless languages[language_name]
+     nil
+   else 
+     languages[language_name][:facts][fact_index] 
+   end
+
 end
 
-find_language_facts(      {
+p find_language_facts(      {
         ruby: { facts: ['was made for programmer happiness', 'its code is beautiful'],
                 initial_release: 'December 25, 1996',
                 is_beautiful?: true },
@@ -78,4 +83,4 @@ find_language_facts(      {
         javascript: { facts: ['you have to use semicolons everywhere', "its real name isn't even javascript"],
                       initial_release: 'December 4, 1995',
                       is_beautiful?: false }
-      }, :ruby)
+      }, :python)
