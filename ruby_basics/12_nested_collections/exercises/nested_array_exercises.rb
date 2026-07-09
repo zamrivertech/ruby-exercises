@@ -58,10 +58,8 @@ def count_empty_seats(chart)
   end
   
   count
-  
-end
 
-count_empty_seats([[nil, 'Bob', 'Joe'], [nil, nil, 'Bill']])
+end
 
 def find_favorite(array_of_hash_objects)
   # take an array_of_hash_objects and return the hash which has the key/value
@@ -74,7 +72,22 @@ def find_favorite(array_of_hash_objects)
   #   { name: 'JavaScript', is_my_favorite?: false },
   #   { name: 'HTML', is_my_favorite?: false }
   # ]
+  favorite = {}
+  
+  array_of_hash_objects.each do |languages|
+    
+  favorite = languages if languages[:is_my_favorite?] == true
+
+  end
+
+  favorite
 
   # TIP: there will only be a maximum of one hash in the array that will
   # return true to the :is_my_favorite? key
 end
+
+find_favorite(        [
+          { name: 'JavaScript', is_my_favorite?: false },
+          { name: 'Ruby', is_my_favorite?: true },
+          { name: 'HTML', is_my_favorite?: false }
+        ])
