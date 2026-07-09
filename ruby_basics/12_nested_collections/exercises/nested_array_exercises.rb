@@ -4,7 +4,7 @@ def blank_seating_chart(number_of_rows, seats_per_row)
   # represent that each seat is empty.
 
 
-  Array.new(2, Array.new(3))
+  Array.new(number_of_rows) { Array.new(seats_per_row) }
 
   # Example: blank_seating_chart(2, 3) should return:
   # [
