@@ -38,8 +38,6 @@ def delete_seat_from_row(chart, row_index, seat_index)
   chart
 end
 
-p delete_seat_from_row([[nil, 'Bob', 'Joe'], [nil, nil, 'Bill']],0,1)
-
 def delete_row_from_chart(chart, row_index)
   # take a chart and delete the row at row_index of the chart,
   # then return the chart
@@ -51,7 +49,19 @@ def count_empty_seats(chart)
   # take a chart and return the number of empty (nil) seats in it
 
   # NOTE: `chart` should **not** be mutated
+  count = 0
+  
+  chart.each do |seat|
+    seat.each do |s|
+      count += 1 if s == nil
+    end
+  end
+  
+  count
+  
 end
+
+count_empty_seats([[nil, 'Bob', 'Joe'], [nil, nil, 'Bill']])
 
 def find_favorite(array_of_hash_objects)
   # take an array_of_hash_objects and return the hash which has the key/value
